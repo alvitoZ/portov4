@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+body {
+  background-color: rgb(18, 181, 235);
+  background-image: url("/bg.jpeg");
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Changa", sans-serif;
+  -webkit-text-stroke-width: 0.12px;
+  -webkit-text-stroke-color: rgb(255, 0, 0);
+  /* outline: 1px solid greenyellow; */
+}
+
+.lierreStar {
+  background-color: #ece517;
+}
+
+.pinoStar {
+  background-color: #2171da;
+}
+
+.medusaStar {
+  background-color: #d54313;
+}
+
+.jashinStar {
+  background-color: #ffc0cb;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.text-rotate {
+  writing-mode: vertical-rl;
+}
+
+.custom-text-lg {
+  color: #11f7ff;
+  font-size: calc(1vw + 8px);
+}
+
+.custom-text-sm {
+  font-size: calc(1vw + 2px);
+}
+
+.custom-text-3xl {
+  color: #fb4c69;
+  font-family: "Mulish", sans-serif;
+}
+
+.medusa-animation {
+  /* animation: medusa-animation 2s ease-in-out 1s infinite alternate forwards; */
+  animation-name: medusa-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.medusa-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes medusa-animation {
+  from {
+    top: 56px;
+    transform: rotate(-10deg);
+  }
+
+  to {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+
+.jashin-animation {
+  animation-name: jashin-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.jashin-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes jashin-animation {
+  0% {
+    left: 16px;
+    transform: rotate(-5deg);
+  }
+  100% {
+    left: 0;
+    transform: rotate(0);
+  }
+}
+
+/* .lierre-animation {
+  animation: lierre-animation 2s ease-in-out infinite alternate forwards;
+}
+
+.lierre-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes lierre-animation {
+  0% {
+    right: 24px;
+    transform: rotate(-4deg);
+  }
+
+  100% {
+    right: 0;
+    transform: rotate(0);
+  }
+} */
+
+/* .pino-animation {
+  animation: pino-animation 2s ease-in-out 0ms infinite alternate forwards;
+}
+
+.pino-animation:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pino-animation {
+  from {
+    bottom: 64px;
+    right: 12px;
+    transform: rotate(-12deg);
+  }
+
+  to {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+} */
