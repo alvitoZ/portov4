@@ -2,17 +2,20 @@
 import React from "react";
 import { CustomText } from "../atoms";
 import Image from "next/image";
+import Link from "next/link";
 
 const index = () => {
   return (
     <div className="flex justify-between items-center -rotate-6 relative md:right-6 right-0 hover:rotate-0 duration-700 ease-in-out hover:scale-110">
       <div className="w-32 flex flex-col gap-4">
-        <CustomText
-          text="DROPKICK ON MY DEVIL!!"
-          size="lg"
-          bold="bold"
-          line="l6"
-        />
+        <Link href={"https://jashinchan.com/"} passHref>
+          <CustomText
+            text="DROPKICK ON MY DEVIL!!"
+            size="lg"
+            bold="bold"
+            line="l6"
+          />
+        </Link>
         <CustomText
           text="Jashin Chan Dropkick !!"
           size="md"

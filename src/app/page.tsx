@@ -5,9 +5,6 @@ export default function Home() {
   return (
     <Main>
       <CardContainer />
-      {/* <Star /> */}
-      {/* <Star />
-      <CustomText text="miaw" size="lg" /> */}
     </Main>
   );
 }

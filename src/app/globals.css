@@ -41,7 +41,7 @@ body {
   font-family: "Changa", sans-serif;
   -webkit-text-stroke-width: 0.12px;
   -webkit-text-stroke-color: rgb(255, 0, 0);
-  /* outline: 1px solid greenyellow; */
+  outline: 1px solid greenyellow;
 }
 
 .lierreStar {
@@ -71,7 +71,9 @@ body {
 }
 
 .custom-text-lg {
-  color: #11f7ff;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: rgb(255, 0, 212);
+  color: #fa360a;
   font-size: calc(1vw + 8px);
 }
 
@@ -84,8 +86,7 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-.medusa-animation {
-  /* animation: medusa-animation 2s ease-in-out 1s infinite alternate forwards; */
+/* .medusa-animation {
   animation-name: medusa-animation;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -113,7 +114,7 @@ body {
 
 .jashin-animation {
   animation-name: jashin-animation;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: infinite;
@@ -136,8 +137,14 @@ body {
   }
 }
 
-/* .lierre-animation {
-  animation: lierre-animation 2s ease-in-out infinite alternate forwards;
+.lierre-animation {
+  animation-name: lierre-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 .lierre-animation:hover {
@@ -147,17 +154,25 @@ body {
 @keyframes lierre-animation {
   0% {
     right: 24px;
+    padding: 0;
     transform: rotate(-4deg);
   }
 
   100% {
+    padding: 10px;
     right: 0;
     transform: rotate(0);
   }
-} */
+}
 
-/* .pino-animation {
-  animation: pino-animation 2s ease-in-out 0ms infinite alternate forwards;
+.pino-animation {
+  animation-name: pino-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 .pino-animation:hover {
@@ -177,3 +192,23 @@ body {
     transform: rotate(0);
   }
 } */
+
+.animation-layout {
+  animation-name: animation-layout;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animation-layout {
+  from {
+    /* transform: 0; */
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
